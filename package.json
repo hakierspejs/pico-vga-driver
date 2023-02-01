@@ -1,0 +1,10 @@
+{
+    "urls": [
+        [
+            "vga_driver.py",
+            "github:hakierspejs/pico-vga-driver/vga_driver.py"
+        ]
+    ],
+    "deps": [],
+    "version": "0.1.0"
+}
