@@ -90,7 +90,7 @@ def main():
         )
         print(micropython.mem_info())
 
-        utime.sleep_ms(60 * 1000)
+        utime.sleep_ms(600 * 1000)
 
     finally:
         vga.stop_synchronisation()
