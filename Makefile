@@ -12,11 +12,17 @@ ls:
 burn:
 	mpremote connect $(PORT) fs cp ./*.py :
 
-examplerun: burn
-	mpremote connect $(PORT) run example.py
-
-run: burn
+run-vga-driver: burn
 	mpremote connect $(PORT) run vga_driver.py
+
+run-example: burn
+	mpremote connect $(PORT) run ./examples/simple/main.py
+
+run:
+	mpremote connect $(PORT) fs cp ./examples/hs_logo/qrlink.svgpath :
+	mpremote connect $(PORT) fs cp ./examples/hs_logo/*.py :
+	mpremote connect $(PORT) fs cp ./vga_driver.py :
+	mpremote connect $(PORT) run ./examples/hs_logo/main.py
 
 black:
 	black ./*.py

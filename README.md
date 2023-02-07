@@ -22,8 +22,12 @@ To test it locally you have to connect the VGA cable to GPIO pins via resistors,
 than install [mpremote](https://docs.micropython.org/en/latest/reference/mpremote.html) tool and now you may use make command to run the example:
 
 ```bash
+git clone https://github.com/hakierspejs/pico-vga-driver.git
+cd pico-vga-driver
 make run
 ```
+
+The default example draws Hackerspace Łódź logo with QR link. 
 
 
 Example of usage:
@@ -55,6 +59,7 @@ def main():
 
 if __name__ == "__main__":
 ```
+More examples you may find in the [examples folder](https://github.com/hakierspejs/pico-vga-driver/blob/master/examples/).
 
 ---
 Feel free to contribute
